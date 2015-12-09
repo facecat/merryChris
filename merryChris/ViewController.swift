@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bgImageView: UIImageView!
+    @IBOutlet weak var nameImageView: UIImageView!
+    @IBOutlet weak var hitMeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func touchHitMeButton(sender: UIButton) {
+        bgImageView.hidden = false
+        nameImageView.hidden = false
+        hitMeButton.hidden = true
+    }
 
 }
 
